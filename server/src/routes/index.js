@@ -7,5 +7,8 @@ import reviewRoute from "./review.route.js"
 const router = express.Router()
 
 router.use("/user", userRoute)
+router.use("/person", personRoute)
+router.use("/:mediaType", mediaRoute)
+router.use("/reviews", reviewRoute)
 
 export default router;
