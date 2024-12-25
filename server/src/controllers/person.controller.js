@@ -4,7 +4,7 @@ import tmdbApi from "../tmdb/tmdb.api"
 
 const personDetail = async (req,res) => {
     try {
-        const { personId } = res.params
+        const { personId } = req.params
 
         const person = await tmdbApi.personDetail({ personId})
 

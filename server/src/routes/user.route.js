@@ -1,10 +1,10 @@
 import express from "express"
 import { body } from "express-validator"
-import favouriteController from "../controllers/favourite.controller"
-import userController from "../controllers/user.controller"
-import requestHandler from "../handlers/request.handler"
-import userModel from "../models/user.model"
-import tokenMiddleware from  "../middleware/token.middleware"
+import favouriteController from "../controllers/favourite.controller.js"
+import userController from "../controllers/user.controller.js"
+import requestHandler from "../handlers/request.handler.js"
+import userModel from "../models/user.model.js"
+import tokenMiddleware from  "../middleware/token.middleware.js"
 
 const router = express.Router()
 
