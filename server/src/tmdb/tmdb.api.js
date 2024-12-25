@@ -1,5 +1,5 @@
-import axiosClient from "../axios/axios.client";
-import tmdbEndpoints from "./tmdb.endpoint";
+import axiosClient from "../axios/axios.client.js";
+import tmdbEndpoints from "./tmdb.endpoint.js";
 
 const tmdbApi = {
     MediaList: async ({ mediaType, mediaCategory, page }) => await axiosClient.get(
@@ -33,3 +33,5 @@ const tmdbApi = {
         tmdbEndpoints.personMedias({ personId })
     )
 }
+
+export default { tmdbApi }

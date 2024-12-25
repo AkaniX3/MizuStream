@@ -1,6 +1,6 @@
-import responseHandler from "../handlers/response.handler";
-import reviewModel from "../models/review.model";
-import tmdbApi from "../tmdb/tmdb.api"
+import responseHandler from "../handlers/response.handler.js";
+import reviewModel from "../models/review.model.js";
+import tmdbApi from "../tmdb/tmdb.api.js"
 
 const personDetail = async (req,res) => {
     try {
