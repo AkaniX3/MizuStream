@@ -31,7 +31,7 @@ const userApi = {
     },
     getInfo: async () => {
         try{
-            const response = await publicClient.get(
+            const response = await privateClient.get(
                 userEndpoints.getInfo
             )
             
@@ -40,7 +40,7 @@ const userApi = {
     },
     passwordUpdate: async ({ password, newPassword, confirmNewPassword }) => {
         try{
-            const response = await publicClient.put(
+            const response = await privateClient.put(
                 userEndpoints.passwordUpdate,
                 { password, newPassword, confirmNewPassword }
             )
@@ -49,3 +49,5 @@ const userApi = {
         } catch (err) {return { err }; }
     }
 }
+
+export default userApi;
